@@ -1,0 +1,78 @@
+# ===== Node / React / Vite =====
+node_modules/
+dist/
+dist-ssr/
+.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.local
+
+# ===== Python / FastAPI =====
+venv/
+env/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pycache
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# ===== Environment & Secrets =====
+.env
+.env.local
+.env.development
+.env.production
+.env.*.local
+*.key
+*.pem
+secrets.json
+
+# ===== Flutter / Dart =====
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+*.g.dart
+*.freezed.dart
+
+# ===== IDEs =====
+.vscode/
+.idea/
+*.iml
+*.suo
+*.user
+*.swp
+*.swo
+.history/
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+desktop.ini
+*.lnk
+
+# ===== Logs =====
+*.log
+logs/
+output/
+outputs/
+
+# ===== Misc =====
+*.bak
+*.tmp
+*.orig
+.cache/
