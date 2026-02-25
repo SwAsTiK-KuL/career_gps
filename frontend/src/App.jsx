@@ -442,9 +442,18 @@ function App() {
     if (skills.length === 0) { setError('Please add at least one skill.'); return; }
     setLoading(true); setError(''); setRoadmap('');
     try {
-      const res = await axios.post('/api/generate-roadmap', {
-        skills, designation: designation.trim(), job_description: jobDescription, model
-      });
+      // For Local Run
+      // const res = await axios.post('/api/generate-roadmap', {
+      //   skills, designation: designation.trim(), job_description: jobDescription, model
+      // });
+
+      //For Production
+      const res = await axios.post('https://career-gps-backend.vercel.app/api/generate-roadmap', {
+           skills,
+           designation: designation.trim(),
+           job_description: jobDescription,
+           model
+         });
       setRoadmap(res.data.roadmap);
     } catch (err) {
       setError(err.response?.data?.detail || 'Something went wrong. Is the backend running?');
