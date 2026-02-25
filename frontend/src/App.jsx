@@ -373,7 +373,6 @@ function LoadingView() {
         <p className="text-orange-400 font-medium anim-fade-up text-sm tracking-wide" key={step}>
           {steps[step]}
         </p>
-        <p className="text-zinc-600 text-xs mt-1">Powered by Gemini AI</p>
       </div>
       <div className="flex gap-1.5">
         {[0,1,2].map(i => (
